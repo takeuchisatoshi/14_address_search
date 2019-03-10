@@ -1,7 +1,9 @@
 import requests
 
 if __name__ == '__main__':
-    url = "http://zipcloud.ibsnet.co.jp/api/search?zipcode=0287111"
+    zipcode = "6638141"
+
+    url = f"http://zipcloud.ibsnet.co.jp/api/search?zipcode={zipcode}"
     r = requests.get(url)
     address_dict = r.json()
     # print(r.json())
